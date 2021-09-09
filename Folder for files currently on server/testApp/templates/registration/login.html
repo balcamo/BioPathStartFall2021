@@ -1,0 +1,26 @@
+{% extends 'index.html' %}
+{% load socialaccount %}
+{% block login %}
+<!--March 29,2021 Brandon Clark loaded socialaccount for google login-->
+<div class="center-content">
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <form class="" method="post">
+            {% csrf_token %}
+            {{ form.as_ul }}
+            <div class="text-center">
+	    <!--March 29, 2021 Brandon Clark Added Google Login submit button-->
+                <button type="submit" class="btn btn-primary btn-lg" id="login-button">Login</button>
+		<a href="{% provider_login_url 'google' %}">Login With Google</a>
+	    </div>	
+	    
+        </form>
+        <div class="text-center">
+            <a href="/testApp/accounts/password_reset/">
+                <button class="forgot-password">Forgot Password? Click here to reset.</button>
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'indexLogged.html' %}
+
+{% block gettingStarted %}
+<!--Created by Brandon Clark on March 15,2021-->
+<!--Purpose is to hold getting started html page on website-->
+</head>
+<body>
+	<div id="GettingStartedDiv">
+			<iframe width="800" height="450" src="https://www.youtube.com/embed/zjiHQQbgH74" frameborder="0" allow="accelerometer; autoplay; clipboar
+				d-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+			</iframe>
+	</div>
+	
+	<!-- Help Popup-->
+	<div class ="modal fade"id="helpModal"tabindex="-1"role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog"role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title"id="exampleModalLabel">Help</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>On this screen you can watch a getting started video to understand how to use our website</p>
+					<p>You will be walked through:</p>
+					<p>1. How to view a teachers model<br>
+					2. How to create a students model</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn-btn-primary" data-dismiss="modal">Okay</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+{% endblock %}

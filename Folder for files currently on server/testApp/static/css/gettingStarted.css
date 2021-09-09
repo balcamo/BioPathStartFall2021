@@ -1,0 +1,72 @@
+/*Programmer: Brandon Clark and Daniel Strub
+ *Project: BioPath Tools for Biochemistry
+ *Created on: March 18, 2021
+ *Description: The purpose of this file is to create all the sylistic features of the 
+ *getting started video html page
+ *last edit: Brandon Clark April 17, 2021 in order to implement bootstrap mathods.
+ */
+:root{
+	/*Variables containing colors that might be used on the website*/
+	--main-color: #17a2b8;  
+	--secondary-color: #fff; /* white */
+	--border-color: #fff; /* white */
+	--text-color: black;    /* black */
+	--button-text-color: #fff;
+	--main-hover-color: #138496;
+	--button-border-radius: 10px;
+}	
+
+display: list-item
+.gs_grid {
+	display: grid;
+	grid-template-columns: auto;
+}
+
+.gs_grid_item {
+
+}
+#GettingStartedCanvas {
+	 background-color: var(--secondary-color);
+	 opacity: 0.85;
+	 width: 100%;
+}
+#GettingStartedCanvas{
+	width: 100vw;
+}	
+
+#GettingStartedDiv{
+	width: auto;
+	height: auto;
+	overflow: auto;
+	background: rgba(255, 255, 255, .8);
+	text-align: center;
+}
+
+@media screen and (max-width: 767.98px) {
+	.gs_grid {
+		display: grid;
+		grid-template-columns: auto;
+	}
+
+	.gs_grid_item {
+
+	}
+	#GettingStartedCanvas {
+		background-color: var(--secondary-color);
+		opacity: 0.85;
+		width: 100%;
+	}
+	#GettingStartedCanvas{
+		width: 100vw;
+	}
+
+	#GettingStartedDiv{
+		width: auto;
+		height: auto;
+		overflow: auto;
+		background: rgba(255, 255, 255, .8);
+		text-align: center;
+	}
+}
+
+
